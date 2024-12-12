@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import HeroSection from "./components/HeroSection";
 
 function App() {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
+ 
 
   return (
     <>

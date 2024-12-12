@@ -1,19 +1,28 @@
-import React from 'react';
+import { EllipsisVertical, Gauge, Table2 } from "lucide-react"
 
-
-const Card = (props) => {
+const Card = () => {
   return (
     <>
-    <div class="mt-6 flex items-end justify-between">
-      <div class=" w-48 rounded-md bg-[url(https://images.pexels.com/photos/392031/pexels-photo-392031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+    <div className="mt-6 flex items-end justify-between container">
+      <div className=" w-48 rounded-md bg-[url(https://images.pexels.com/photos/392031/pexels-photo-392031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
       </div>
-      <div class=" w-40 rounded-md bg-green-950 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+      <div className="flex flex-col w-40 rounded-md bg-green-950 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64 text-center items-center justify-center">
+        <h1 className="text-white text-2xl">Over 100+</h1>
+        <p className="mt-2 text-white">Our estimated clients and partners</p>
       </div>
-      <div class=" w-48 rounded-md bg-white object-cover group-hover:opacity-75 lg:aspect-auto lg:h-40">
+      <div className=" flex flex-col items-center w-48 rounded-md bg-white object-cover group-hover:opacity-75 lg:aspect-auto lg:h-40">
+        <div className="flex gap-x-20"><span><Table2 /></span><EllipsisVertical /></div>
+      <h1>Total Projects</h1>
+      <h1>1951+</h1>
+      <h1 className="text-center">Incase of 126 this month</h1>
       </div>
-      <div class=" w-40 rounded-md bg-green-300 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+      <div className="flex flex-col items-center justify-center w-40 rounded-md bg-green-100 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+      <h1 className="text-2xl">6+</h1>
+      <p className="px-5 text-center">Years of Dedicated Service</p>
       </div>
-      <div class=" w-48 rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+      <div className=" bg-green-950 text-white flex flex-col items-start px-6 justify-end w-48 rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+      <Gauge />
+      <p className="capitalize pb-4">Achieve optimal efficiency and Boost Productivity</p>
       </div>
     </div>
     </>
