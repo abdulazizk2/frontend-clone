@@ -4,6 +4,7 @@ import Card from "./components/Card";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
+import Price from "./components/Price";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Card />
         <Services />
         <AboutUs />
+        <Price />
       </div>
     </>
   );
