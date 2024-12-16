@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navbar = () => {
   const NavLink = [
     { link: "/", menu: "Home" },
@@ -14,8 +12,8 @@ const Navbar = () => {
           <div className="logo">Prodmast</div>
           <nav className="flex gap-6">
             {NavLink.map((loop) => (
-              <ul >
-                <a className="text-gray-500 hover:text-black" key={loop.index} href={loop.link}>
+              <ul key={loop.index}>
+                <a className="text-gray-500 hover:text-black"  href={loop.link}>
                   {loop.menu}
                 </a>
               </ul>
