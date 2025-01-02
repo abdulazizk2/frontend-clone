@@ -10,8 +10,8 @@ const Price = () => {
         </h1>
         <p className="text-sm text-slate-400">Flexible pricing for any business size.</p>
       </div>
-      <div className="flex items-center justify-center gap-12 mt-10">
-        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-[30%]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 mt-10">
+        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-full md:w-[30%]">
           <h1 className="text-xl mb-3">Starter</h1>
           <p className="text-sm text-slate-400 mb-5">
             This package offers the basic features you need to
@@ -27,7 +27,7 @@ const Price = () => {
             <li className="flex gap-2"><span><CircleCheck /></span> Initial setup guide</li>
           </ul>
         </div>
-        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-[30%] ">
+        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-full md:w-[30%] ">
           <h1 className="text-xl mb-3">Starter</h1>
           <p className="text-sm text-slate-400 mb-5">
             This package offers the basic features you need to
@@ -45,7 +45,7 @@ const Price = () => {
         </div>
       </div>
       <div className="flex items-center justify-center gap-12 mt-10">
-        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-[60%] ">
+        <div className="bg-[#1f1f21;] text-left rounded-xl p-8 w-full md:w-[60%] ">
           <h1 className="text-xl mb-3">Starter</h1>
           <p className="text-sm text-slate-400 mb-5">
             This package offers the basic features you need to
