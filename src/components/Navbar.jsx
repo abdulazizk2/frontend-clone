@@ -16,7 +16,7 @@ const Navbar = () => {
     <>   
         <header className="flex px-3 items-center justify-between">
           <div className="logo">Prodmast</div>
-          <div className="flex md:hidden">
+          <div className="flex cursor-pointer md:hidden">
           <Menu/>
           </div>
           <nav ref={navRef}>
