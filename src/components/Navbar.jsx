@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <>
       
-        <header className="flex items-center justify-between">
+        <header className="flex px-2 items-center sm:p-0 justify-between">
           <div className="logo">Prodmast</div>
-          <nav className="flex gap-6">
+          <nav className="hidden sm:flex gap-6">
             {NavLink.map((loop) => (
               <ul key={loop.index}>
                 <a className="text-gray-500 hover:text-black"  href={loop.link}>
