@@ -1,3 +1,5 @@
+import { Menu, X } from "lucide-react";
+
 const Navbar = () => {
   const NavLink = [
     { link: "/", menu: "Home" },
@@ -8,9 +10,12 @@ const Navbar = () => {
   return (
     <>
       
-        <header className="flex px-2 items-center sm:p-0 justify-between">
+        <header className="flex px-3 items-center justify-between">
           <div className="logo">Prodmast</div>
-          <nav className="hidden sm:flex gap-6">
+          <div className="flex md:hidden">
+          <Menu/>
+          </div>
+          <nav className="gap-6 hidden md:flex">
             {NavLink.map((loop) => (
               <ul key={loop.index}>
                 <a className="text-gray-500 hover:text-black"  href={loop.link}>
@@ -18,8 +23,9 @@ const Navbar = () => {
                 </a>
               </ul>
             ))}
+          <X/> 
           </nav>
-          <button className="bg-green-950 text-white rounded-3xl p-2 px-4">
+          <button className="bg-green-950 text-white mt-1 rounded-3xl p-2 px-4">
             Sign Up
           </button>
         </header>
