@@ -42,7 +42,7 @@ const Services = () => {
        
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 p-6 w-full md:max-w-[95%] mx-auto">
-        <div className="h-56 py-6 bg-gray-900 px-3 w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
+        <div className="h-56 py-6 bg-gray-900 px-3 w-full md:w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
           <div className="flex justify-between items-center">
             <SunMedium size={30} />
             <ArrowUpRight size={30} />
@@ -52,7 +52,7 @@ const Services = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             </p>
         </div>
-        <div className="h-56 py-6 bg-gray-900 px-3 w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
+        <div className="h-56 py-6 bg-gray-900 px-3 w-full md:w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
           <div className="flex justify-between items-center">
             <SunMedium size={30} />
             <ArrowUpRight size={30} />
@@ -62,7 +62,7 @@ const Services = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             </p>
         </div>
-        <div className="h-56 py-6 bg-gray-900 px-3 w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
+        <div className="h-56 py-6 bg-gray-900 px-3 w-full md:w-80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
           <div className="flex justify-between items-center">
             <SunMedium size={30} />
             <ArrowUpRight size={30} />
