@@ -3,8 +3,8 @@ import { ArrowUpRight, ChartNoAxesColumnIncreasing, NotebookText, Sparkles, Wave
 
 const HeroSection = () => {
   return (
-    <div className="mx-38 mt-20 items-center justify-center">
-      <h1 className="capitalize text-3xl sm:text-6xl font-semi-bold text-center w-11/12">
+    <div className="px-2 mt-20 items-center justify-center text-center">
+      <h1 className="capitalize text-3xl sm:text-6xl font-semi-bold w-11/12">
         The future of manufacturing <br className="hidden sm:inline-block"/>
         with latest technology
       </h1>
