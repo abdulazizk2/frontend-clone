@@ -2,7 +2,7 @@ import { CircleCheck } from "lucide-react"
 
 const AboutUs = () => {
   return (
-    <div className="container w-full bg-white text-center pt-7 rounded-md text-black pb-10">
+    <section className="container w-full bg-white text-center pt-7 rounded-md text-black pb-10">
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-20">
         <div className="max-w-[55%]">
           <img src="../card.png" alt="product-card" className="bg-slate-100 border rounded-xl p-10" />
@@ -32,7 +32,7 @@ const AboutUs = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

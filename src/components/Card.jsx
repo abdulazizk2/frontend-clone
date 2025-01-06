@@ -3,7 +3,7 @@ import { EllipsisVertical, Gauge, Table2 } from "lucide-react";
 const Card = () => {
   return (
     <>
-      <div className="flex-col p-3 gap-3 mt-6 items-center justify-center flex sm:flex-row sm:items-end sm:justify-evenly sm:container mb-5 md:mb-28 w-full">
+      <section className="flex-col p-3 gap-3 mt-6 items-center justify-center flex sm:flex-row sm:items-end sm:justify-evenly sm:container mb-5 md:mb-28 w-full">
         <div className="w-full min-h-56 p-4 md:w-48 rounded-md bg-[url(https://images.pexels.com/photos/392031/pexels-photo-392031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover group-hover:opacity-75 lg:aspect-auto lg:h-64"></div>
         <div className="flex min-h-28 flex-col w-full md:w-40 rounded-md bg-green-950 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64 text-center items-center justify-center">
           <h1 className="text-white text-2xl">Over 100+</h1>
@@ -31,7 +31,7 @@ const Card = () => {
             Achieve optimal efficiency and Boost Productivity
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 };

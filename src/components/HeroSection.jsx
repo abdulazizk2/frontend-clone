@@ -3,15 +3,15 @@ import { ArrowUpRight, ChartNoAxesColumnIncreasing, NotebookText, Sparkles, Wave
 
 const HeroSection = () => {
   return (
-    <div className="px-2 mt-20 items-center justify-center text-center">
+    <section className="px-2 mt-20 items-center justify-center text-center">
       <h1 className="capitalize text-3xl sm:text-6xl font-semi-bold w-11/12">
         The future of manufacturing <br className="hidden sm:inline-block"/>
         with latest technology
       </h1>
       <p className="text-center items-center justify-center mt-8">Expert tech to elevate your manufacturing. Let`s take your business further.</p>
       <div className="flex items-center justify-center gap-4 mt-6">
-        <button className="bg-green-950 text-white rounded-3xl p-2 px-6 py-3">Get Started</button>
-        <button className="bg-white text-black rounded-3xl p-2 px-6 py-3">Try Demo</button>
+        <button className="bg-green-950 hover:bg-white hover:text-black text-white rounded-3xl p-2 px-6 py-3">Get Started</button>
+        <button className="bg-white hover:text-white hover:bg-black text-black rounded-3xl p-2 px-6 py-3">Try Demo</button>
       </div>
       <div className="hidden sm:flex container items-center justify-between -mt-32">
       <div className="flex-col">
@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div><Waves size={40} className="border border-slate-800 p-2 rounded-full"/></div>
       </div>
       </div>
-    </div>
+    </section>
   );
 };
 
