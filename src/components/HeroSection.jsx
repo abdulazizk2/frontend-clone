@@ -10,8 +10,8 @@ const HeroSection = () => {
       </h1>
       <p className="text-center items-center justify-center mt-8">Expert tech to elevate your manufacturing. Let`s take your business further.</p>
       <div className="flex items-center justify-center gap-4 mt-6">
-        <button className="bg-green-950 hover:bg-white hover:text-black text-white rounded-3xl p-2 px-6 py-3">Get Started</button>
-        <button className="bg-white hover:text-white hover:bg-black text-black rounded-3xl p-2 px-6 py-3">Try Demo</button>
+        <button className="bg-green-950 hover:bg-black hover:text-white hover:-translate-y-2 transition ease-in-out delay-[.1s] text-white rounded-3xl p-2 px-6 py-3">Get Started</button>
+        <button className="bg-white hover:text-white transition-all ease-in-out delay-[.1s] hover:-translate-y-2 hover:bg-black text-black rounded-3xl p-2 px-6 py-3">Try Demo</button>
       </div>
       <div className="hidden sm:flex container items-center justify-between -mt-32">
       <div className="flex-col">

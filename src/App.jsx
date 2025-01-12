@@ -8,6 +8,7 @@ import Price from "./components/Price";
 import WorkWithUs from "./components/WorkWithUs";
 import Production from "./components/Production";
 import Footer from "./components/Footer";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (

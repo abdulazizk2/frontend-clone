@@ -25,7 +25,7 @@ const Card = () => {
           <h1 className="text-2xl">6+</h1>
           <p className="px-5 text-center">Years of Dedicated Service</p>
         </div>
-        <div className=" bg-green-950 justify-center min-h-28 text-white flex flex-col items-center md:items-start md:px-6 md:justify-end w-full md:w-48 rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
+        <div className=" bg-green-950 text-center justify-center min-h-28 text-white flex flex-col items-center md:items-start md:px-6 md:justify-end w-full md:w-48 rounded-md object-cover group-hover:opacity-75 lg:aspect-auto lg:h-64">
           <Gauge />
           <p className="capitalize md:pb-4">
             Achieve optimal efficiency and Boost Productivity
