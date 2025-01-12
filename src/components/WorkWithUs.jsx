@@ -4,7 +4,7 @@ const WorkWithUs = () => {
   return (
     <section className='w-full bg-white flex flex-col md:flex-row gap-10 p-10 md:p-20 items-center justify-center'>
         <div>
-            <h1 className='text-4xl font-bold w-full'>
+            <h1 className='text-2xl md:text-4xl font-bold w-full'>
                 Empowering Top Companies with Seamless Integration
             </h1>
             <p className='mt-10 text-gray-500'>
