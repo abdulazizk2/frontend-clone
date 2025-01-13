@@ -2,11 +2,11 @@ import { Menu, X } from "lucide-react";
 import { useRef } from "react";
 import React, { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
+import SignUp from "./SignUp";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.style.transform = "translateX(0px)";  // Example of adding inline CSS
@@ -29,7 +29,7 @@ const Navbar = () => {
         <div onClick={showNavbar} className="flex cursor-pointer md:hidden">
           <Menu />
         </div>
-        <nav className="transform translate-x-[100%] transition-transform duration-500 ease-in-out z-8 fixed top-0 right-0 flex flex-col gap-6 w-1/2 bg-white h-dvh md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:static md:flex-row md:gap-4" ref={navRef}>
+        <nav className="transform translate-x-[100%] md:transition-none transition-transform duration-500 ease-in-out z-8 fixed top-0 right-0 flex flex-col gap-6 w-1/2 bg-white h-dvh md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:static md:flex-row md:gap-4" ref={navRef}>
           <div>
             <div className="md:hidden float-end m-10 cursor-pointer">
               <X onClick={hideNavbar} />
@@ -75,44 +75,10 @@ const Navbar = () => {
                 <div className="sm:flex sm:items-start">
                   <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full ">
                     <DialogTitle as="h3" className="text-base font-semibold text-gray-900">
-                      <form className='flex flex-col justify-center' action="submit">
-                        <div>
-                          <label htmlFor="email">Enter Your Email</label>
-                          <input
-                            onChange={(e)=>{
-                              setEmail(e.target.value)
-                            }}
-                            className='bg-slate-100 focus-within:border-none w-11/12 my-3 p-2 rounded-md'
-                            value={email}
-                            type="text"
-                            name="email"
-                            id="email" />
-                        </div>
-                        <div>
-                          <label htmlFor="password">Enter Your Password</label>
-                          <input 
-                          value={password}
-                          onChange={(e)=>{
-                            setPassword(e.target.value)
-                          }}
-
-                          className='bg-slate-100 w-11/12 my-3 p-2 rounded-md'
-                          type="password" 
-                          name="password" 
-                          id="password" />
-                        </div>
-                        <div className="self-center w-11/12 sm:w-auto">
-                        <button
-                          type="submit"
-                          className="inline-flex w-full justify-center rounded-md bg-slate-100 px-3 py-2 transition-all delay-[0.1s] ease-in-out hover:bg-green-300 hover:-translate-y-1 text-sm font-semibold text-black shadow-sm sm:ml-3 sm:w-auto"
-                        >
-                          Sign Up
-                        </button>
-                        </div>
-                      </form>
+                      
                     </DialogTitle>
                     <div className="mt-2">
-
+                      <SignUp/>
                     </div>
                   </div>
                 </div>
