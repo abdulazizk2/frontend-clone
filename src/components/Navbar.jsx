@@ -3,8 +3,22 @@ import { useRef } from "react";
 import React, { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import SignUp from "./SignUp";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Navbar = () => {
+  useGSAP(()=>{
+    gsap.from('header',{
+      y:-60,
+      delay:.2,
+      duration:.5
+    })
+    gsap.to('header',{
+      y:5,
+      delay:.15,
+
+    })
+  })
   const [open, setOpen] = useState(false);
 
   const navRef = useRef();

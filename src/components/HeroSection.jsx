@@ -1,7 +1,15 @@
 import { ArrowUpRight, ChartNoAxesColumnIncreasing, NotebookText, Sparkles, Waves } from "lucide-react";
-
+import { gsap } from "gsap";
 
 const HeroSection = () => {
+  gsap.from("h1",{
+    y:20,
+    opacity:0,
+    scale:0.2,
+    duration:1,
+    delay:3,
+
+  })
   return (
     <section className="px-2 mt-20 items-center justify-center text-center">
       <h1 className="capitalize text-3xl sm:text-6xl font-semi-bold w-11/12">
