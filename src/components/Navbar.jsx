@@ -1,49 +1,54 @@
 import { Menu, X } from "lucide-react";
 import { useRef } from "react";
-import React, { useState } from 'react'
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
+import React, { useState } from "react";
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
 import SignUp from "./SignUp";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Navbar = () => {
-  useGSAP(()=>{
-    gsap.from('header',{
-      y:-60,
-      delay:.2,
-      duration:.5
-    })
-    gsap.to('header',{
-      y:5,
-      delay:.15,
-
-    })
-  })
+  useGSAP(() => {
+    gsap.from("header", {
+      y: -160,
+      delay: 0.5,
+      duration: 2,
+      ease: "elastic.out(1,0.75)",
+    });
+  });
   const [open, setOpen] = useState(false);
 
   const navRef = useRef();
   const showNavbar = () => {
-    navRef.current.style.transform = "translateX(0px)";  // Example of adding inline CSS
+    navRef.current.style.transform = "translateX(0px)"; // Example of adding inline CSS
     // Example of adding inline CSS
-  }
-  const hideNavbar = () => { // Example of adding inline CSS
-    navRef.current.style.transform = "translateX(100%)";  // Example of adding inline CSS
-  }
+  };
+  const hideNavbar = () => {
+    // Example of adding inline CSS
+    navRef.current.style.transform = "translateX(100%)"; // Example of adding inline CSS
+  };
   const NavLink = [
     { link: "/", menu: "Home" },
     { link: "/", menu: "About" },
     { link: "/", menu: "Contact" },
     { link: "/", menu: "Products" },
   ];
-  
+
   return (
     <>
-      <header className="flex px-3 items-center justify-between">
+      <header className="mt-2 flex px-3 items-center justify-between">
         <div className="logo">Prodmast</div>
         <div onClick={showNavbar} className="flex cursor-pointer md:hidden">
           <Menu />
         </div>
-        <nav className="transform translate-x-[100%] md:transition-none transition-transform duration-500 ease-in-out z-8 fixed top-0 right-0 flex flex-col gap-6 w-1/2 bg-white h-dvh md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:static md:flex-row md:gap-4" ref={navRef}>
+        <nav
+          className="transform translate-x-[100%] md:transition-none transition-transform duration-500 ease-in-out z-8 fixed top-0 right-0 flex flex-col gap-6 w-1/2 bg-white h-dvh md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:static md:flex-row md:gap-4"
+          ref={navRef}
+        >
           <div>
             <div className="md:hidden float-end m-10 cursor-pointer">
               <X onClick={hideNavbar} />
@@ -51,24 +56,29 @@ const Navbar = () => {
           </div>
           {NavLink.map((loop) => (
             <ul key={loop.menu}>
-              <a className="text-gray-500 px-5 inline-block w-full hover:bg-gray-400 md:hover:bg-transparent md:hover:text-black" href={loop.link}>
+              <a
+                className="text-gray-500 px-5 inline-block w-full hover:bg-gray-400 md:hover:bg-transparent md:hover:text-black"
+                href={loop.link}
+              >
                 {loop.menu}
               </a>
             </ul>
           ))}
           <button
             onClick={() => {
-              setOpen(true)
+              setOpen(true);
             }}
-            className="mx-auto bg-green-950 md:hidden text-white mt-1 rounded-3xl p-2 px-4">
+            className="mx-auto bg-green-950 md:hidden text-white mt-1 rounded-3xl p-2 px-4"
+          >
             Sign Up
           </button>
         </nav>
         <button
           onClick={() => {
-            setOpen(true)
+            setOpen(true);
           }}
-          className="bg-green-950 hidden md:inline-block text-white mt-1 rounded-3xl p-2 px-4">
+          className="bg-green-950 hidden md:inline-block text-white mt-1 rounded-3xl p-2 px-4"
+        >
           Sign Up
         </button>
       </header>
@@ -88,11 +98,12 @@ const Navbar = () => {
               <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                   <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full ">
-                    <DialogTitle as="h3" className="text-base font-semibold text-gray-900">
-                      
-                    </DialogTitle>
+                    <DialogTitle
+                      as="h3"
+                      className="text-base font-semibold text-gray-900"
+                    ></DialogTitle>
                     <div className="mt-2">
-                      <SignUp/>
+                      <SignUp />
                     </div>
                   </div>
                 </div>
