@@ -10,12 +10,13 @@ import {
 import SignUp from "./SignUp";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   useGSAP(() => {
     gsap.from("header", {
       y: -160,
-      delay: 0.5,
+      delay: 0.9,
       duration: 2,
       ease: "elastic.out(1,0.75)",
     });
@@ -33,9 +34,9 @@ const Navbar = () => {
   };
   const NavLink = [
     { link: "/", menu: "Home" },
-    { link: "/", menu: "About" },
-    { link: "/", menu: "Contact" },
-    { link: "/", menu: "Products" },
+    { link: "/about", menu: "About" },
+    { link: "/contact", menu: "Contact" },
+    { link: "/product", menu: "Products" },
   ];
 
   return (
@@ -55,13 +56,13 @@ const Navbar = () => {
             </div>
           </div>
           {NavLink.map((loop) => (
-            <ul key={loop.menu}>
-              <a
-                className="text-gray-500 px-5 inline-block w-full hover:bg-gray-400 md:hover:bg-transparent md:hover:text-black"
+            <ul className="relative" key={loop.menu}>
+              <Link to={loop.link}
+                className="text-gray-500 px-5 inline-block w-full after:bg-green-200 after:absolute after:top-6 after:left-5 after:h-1 after:w-0 after:hover:w-7 transition-all ease-in-out duration after:transition-all after:ease-linear after:duration-300 hover:border-gray-500 md:hover:bg-transparent md:hover:text-black"
                 href={loop.link}
               >
                 {loop.menu}
-              </a>
+              </Link>
             </ul>
           ))}
           <button

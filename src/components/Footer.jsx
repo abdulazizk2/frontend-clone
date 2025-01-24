@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className='w-full p-14 bg-black text-white'>
-            <div className=' grid md:grid-cols-5 gap-10 mb-10'>
+            <div className=' grid md:grid-cols-5 gap-4 mb-10'>
                 <div>
                     <div className="logo text-2xl">Prodmast</div>
                     <p>
@@ -19,10 +19,6 @@ const Footer = () => {
                         <li><a href="#">Customers</a></li>
                         <li><a href="#">Newsroom</a></li>
                         <li><a href="#">Events</a></li>
-
-
-
-
                     </ul>
                 </div>
                 <div>
@@ -37,7 +33,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h1 className='text-2xl'>
+                    <h1 className='text-2xl text-nowrap'>
                         Products
                     </h1>
                     <ul>

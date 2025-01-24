@@ -8,28 +8,24 @@ import Price from "./components/Price";
 import WorkWithUs from "./components/WorkWithUs";
 import Production from "./components/Production";
 import Footer from "./components/Footer";
+import React from "react";
 import SignUp from "./components/SignUp";
 import { gsap } from "gsap/gsap-core";
+import { useGSAP } from "@gsap/react";
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Product from "./pages/Product";
 function App() {
-    gsap.from("Navbar",{
-      y:-40,
-      duration:3,
-      opacity:0,
-      delay:5,
-    })
+ 
   return (
     <>
-      <main className="w-full sm:container sm:pt-3 sm:w-5/6 sm:m-auto">
-        <Navbar />
-        <HeroSection />
-        <Card />
-        <Services />
-        <AboutUs />
-        <Price />
-        <WorkWithUs />
-        <Production />
-        <Footer />
-      </main>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/product" element={<Product />}/>
+    </Routes>
     </>
   );
 }
