@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-    <main className="w-full sm:container sm:pt-3 sm:w-5/6 sm:m-auto">
+    <main className="overflow-hidden w-full sm:container sm:pt-3 sm:w-5/6 sm:m-auto">
       <Navbar />
       <HeroSection />
       <Card />
